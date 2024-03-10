@@ -5,7 +5,7 @@ const tasks = require('./routes/tasks.js');
 require('dotenv').config();
 
 app.use(express.json());
-
+app.use(express.static('./public'));
 //routes
 
 app.get('/hello', (req, res) => {
